@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+main{
+    font-family: 'Caesar Dressing', cursive;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.096);
+}
+.listamobile{
+    display: none;
+}
+header{
+    padding: 0 150px;
+}
+header nav ul{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li{
+    width: 14vw;
+    padding: 40px 0;
+}
+.part1 picture{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+}
+.part1 picture img{
+    width: 260px;
+}
+.part2 picture img{
+    width: 77vw;
+}
+.final{
+    padding: 20px 0;
+}
+.final picture{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    padding: 20px 0;
+    
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.192);
+}
+footer picture{
+    display: flex;
+    justify-content: space-between;
+}
+.finalmobile{
+    display: none;
+}
+@media screen and (max-width:600px){
+    main picture{
+        display: none;
+     }
+     .listamobile{
+        display: unset;
+     }
+     header nav{
+        display: block;
+     }
+     .part1 picture {
+        display: flex;
+        flex-direction: column;
+     }
+     .part1 picture img{
+        width: 60vw;
+        height: 40vh;
+        padding-bottom: 20px;
+     }
+     .part2 picture img{
+        width: 60vw;
+        height: 40vh;
+     }
+     footer picture{
+        display: none;
+     }
+     .finalmobile{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+     }
+}
